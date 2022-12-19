@@ -17,20 +17,24 @@
 #ifndef Circulo_H
 #define Circulo_H
 class Circulo {
-    public:
-        enum class Color {Rojo, Verde, Azul};
-        Circulo();
-        Circulo(double x, double y, double r, Color c);
-        void Show(int a);
-        void Area(int a);
-        void Perimetro(int a);
-        void Print(int a);
-        void IsInterior(double x, double y);
-    private:
-        double x_;
-        double y_;
-        double r_;
-        Color c_;
+ public:
+  enum class Color {
+    Rojo,
+    Verde,
+    Azul
+  };
+  Circulo();
+  Circulo(double vector_x, double vector_y, double vector_r, Color vector_c);
+  void Show(int numero);
+  void Area(int numero);
+  void Perimetro(int numero);
+  void Print(int numero);
+  void IsInterior(double vector_x, double vector_y);
+ private:
+  double vector_x_;
+  double vector_y_;
+  double vector_r_;
+  Color vector_c_;
 };
 
 #endif

@@ -20,47 +20,55 @@
 /*
  * @brief constructor por defecto
  */
-Point2D::Point2D() : vector_x_{0}, vector_y_{0} {
-  std::cout << "DEBUG: Constructor Point2D por DEFECTO ejecutado" << std::endl;
+
+Point2D::Point2D() : x_{0}, y_{0} {
+    std::cout << "DEBUG: Constructor Point2D por DEFECTO ejecutado" << std::endl;
+
 }
 
 /*
  * @brief constructor con parametros
  */
-Point2D::Point2D(double vector_x, double vector_y) : vector_x_{x}, vector_y_{y} {
-  std::cout << "DEBUG: Constructor Point2D con PARAMETROS ejecutado" << std::endl;
+
+Point2D::Point2D(double x, double y) : x_{x}, y_{y} {
+    std::cout << "DEBUG: Constructor Point2D con PARAMETROS ejecutado" << std::endl;
 }
 
 /*
  * @brief metodo para mostrar las coordenadas del punto
  */
+
 void Point2D::Show(int numero) {
-  std::cout << "Las coordenadas del punto" << numero << " son: (" << vector_x_ << ", " << vector_y_ << ")" << std::endl;    
+    std::cout << "Las coordenadas del punto" << numero << " son: (" << vector_x_ << ", " << vector_y_ << ")" << std::endl;    
 }
 
 /*
  * @brief metodo para mover las coordenadas del punto
  */
-void Point2D::Move(double vector_x, double vector_y) {
-  vector_x_ = vector_x;
-  vector_y_ = vector_y;
-  std::cout << "Las coordenadas del punto han sido cambiadas a: (" << vector_x_ << ", " << vector_y_ << ")" << std::endl;
+
+void Point2D::Move(double x, double y) {
+    vector_x_ = vector_x;
+    vector_y_ = vector_y;
+
+    std::cout << "Las coordenadas del punto han sido cambiadas a: (" << vector_x_ << ", " << vector_y_ << ")" << std::endl;
 }
 
 /*
  * @brief metodo para calcular la distancia entre dos puntos
  */
+
 double Point2D::Distance(Point2D punto) {
-  double distance = sqrt(pow((punto.vector_x_ - vector_x_), 2) + pow((punto.vector_y_ - vector_y_), 2));
-  return distance;
+    double distance = sqrt(pow((punto.vector_x_ - vector_x_), 2) + pow((punto.vector_y_ - vector_y_), 2));
+    return distance;
 }
 
 /*
  * @brief metodo para calcular el punto medio entre dos puntos
  */
+
 Point2D Point2D::Middle(Point2D punto) {
-  double x = (punto.vector_x_ + vector_x_) / 2;
-  double y = (punto.vector_y_ + vector_y_) / 2;
-  Point2D middle(vector_x, vector_y);
-  return middle;
+    double x = (punto.vector_x_ + vector_x_) / 2;
+    double y = (punto.vector_y_ + vector_y_) / 2;
+    Point2D middle(vector_x, vector_y);
+    return middle;
 }

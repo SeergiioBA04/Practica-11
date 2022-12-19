@@ -14,21 +14,20 @@
 // Path: Practica11-ejercisios\Complejo\Complejo_main.cpp
 
 #include "Complejo.h"
-using namespace std;
 
 int main() {
   Complejo complejo1(1, 2);
   Complejo complejo2(3, 4);
   Complejo resultado;
-  cout << "Complejo 1: " << complejo1 << endl;
-  cout << "Complejo 2: " << complejo2 << endl;
+  std::cout << "Complejo 1: " << complejo1 << std::endl;
+  std::cout << "Complejo 2: " << complejo2 << std::endl;
   resultado = complejo1 + complejo2;
-  cout << "Suma: " << resultado << endl;
+  std::cout << "Suma: " << resultado << std::endl;
   resultado = complejo1 - complejo2;
-  cout << "Resta: " << resultado << endl;
+  std::cout << "Resta: " << resultado << std::endl;
   resultado = complejo1 * complejo2;
-  cout << "Multiplicaion: " << resultado << endl;
+  std::cout << "Multiplicaion: " << resultado << std::endl;
   resultado = complejo1 / complejo2;
-  cout << "Division: " << resultado << endl;
+  std::cout << "Division: " << resultado << std::endl;
   return 0;
 }

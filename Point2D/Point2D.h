@@ -22,16 +22,15 @@
 #define POINT2D_H
 
 class Point2D {
-    public:
-        Point2D();
-        Point2D(double x, double y);
-        void Show(int a);
-        void Move(double x, double y);
-        double Distance(Point2D p);
-        Point2D Middle(Point2D p);
-    private:
-        double x_;
-        double y_;
+ public:
+  Point2D();
+  Point2D(double vector_x, double vector_y);
+  void Show(int numero);
+  void Move(double vector_x, double vector_y);
+  double Distance(Point2D punto);
+  Point2D Middle(Point2D punto);
+ private:
+  double vector_x_;
+  double vector_y_;
 };
-
 #endif

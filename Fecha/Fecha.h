@@ -22,8 +22,6 @@
 #include <string>
 #include <cmath>
 
-using namespace std;
-
 class Fecha {
  public:
   Fecha();
@@ -33,8 +31,8 @@ class Fecha {
   int anio() const { return anio_; }
   bool es_bisiesto() const;
   bool es_valida() const;
-  friend ostream& operator<<(ostream& os, const Fecha& fecha);
-  friend istream& operator>>(istream& is, Fecha& fecha);
+  friend std::ostream& operator<<(std::ostream& os, const Fecha& fecha);
+  friend std::istream& operator>>(std::istream& is, Fecha& fecha);
  private:
   int dia_{0};
   int mes_{0};
