@@ -26,7 +26,7 @@ Circulo::Circulo() : vector_x_{0}, vector_y_{0}, vector_r_{0}, vector_c_{Color::
 /*
  * @brief constructor con parametros
  */
-Circulo::Circulo(double vector_x, double vector_y, double vector_r, Color c) : vector_x_{x}, vector_y_{y}, vector_r_{r}, vector_c_{c} {
+Circulo::Circulo(double vector_x, double vector_y, double vector_r, Color vector_c) : vector_x_{vector_x}, vector_y_{vector_y}, vector_r_{vector_r}, vector_c_{vector_c} {
   std::cout << "DEBUG: Constructor Circulo con PARAMETROS ejecutado" << std::endl;
 }
 
@@ -75,11 +75,11 @@ void Circulo::Print(int numero) {
  */
 
 void Circulo::IsInterior(double x, double y) {
-  double distancia = sqrt(pow(vector_x - vector_x_, 2) + pow(vector_y - vector_y_, 2));
+  double distancia = sqrt(pow(vector_x_ - vector_x_, 2) + pow(vector_y_ - vector_y_, 2));
   if (distancia <= vector_r_) {
-    std::cout << "El punto (" << vector_x << ", " << vector_y << ") esta dentro del circulo" << std::endl;
+    std::cout << "El punto (" << vector_x_ << ", " << vector_y_ << ") esta dentro del circulo" << std::endl;
   } 
   else {
-    std::cout << "El punto (" << vector_x << ", " << vector_y << ") esta fuera del circulo" << std::endl;
+    std::cout << "El punto (" << vector_x_ << ", " << vector_y_ << ") esta fuera del circulo" << std::endl;
   }
 }

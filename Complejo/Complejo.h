@@ -31,7 +31,6 @@ class Complejo {
   Complejo operator*(const Complejo& complejo) const;
   Complejo operator/(const Complejo& complejo) const;
   friend ostream& operator<<(ostream& os, const Complejo& complejo);
-  friend istream& operator>>(istream& is, Complejo& complejo);
  private:
   double real_{0};
   double imaginario_{0};

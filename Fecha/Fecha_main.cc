@@ -13,12 +13,30 @@
 
 #include "Fecha.h"
 
-int main() {
-  Fecha fecha1(1, 2, 2020);
-  Fecha fecha2(3, 4, 2121);
+void Usage(int argc, char *argv[]) {
+  if (argc != 4) {
+    std::cout << argv[0] << "Parametros incorrectos" << std::endl;
+    std::cout << "Modo de uso: " << argv[0] << " Dia, Mes, Anio" << std::endl;
+    std::cout << "Pruebe " << argv[0] << " --help para más información" << std::endl;
+    exit(EXIT_SUCCESS);
+  }
+  std::string parameter{argv[1]};
+  if (parameter == "--help"){
+    std::cout << argv[0] << "-- Cifrado de ficheros" << std::endl;
+    std::cout << "Modo de uso: " << argv[0] << " Dia, Mes, Anio" << std::endl;
+    std::cout << std::endl;
+    exit(EXIT_SUCCESS);
+  }
+}
+
+int main(int argc, char *argv[]) {
+  Usage(argc, argv);
+  int dia = std::stoi(argv[1]);
+  int mes = std::stoi(argv[2]);
+  int anio = std::stoi(argv[3]);
+  Fecha fecha1(dia, mes, anio);
   Fecha resultado;
   std::cout << "Fecha 1: " << fecha1 << std::endl;
-  std::cout << "Fecha 2: " << fecha2 << std::endl;
   std::cout << "Fecha 1 es bisiesto: ";
   if (fecha1.es_bisiesto() == true) {
     std::cout << "yes";
@@ -27,24 +45,8 @@ int main() {
     std::cout << "no";
   }
   std::cout << std::endl;
-  std::cout << "Fecha 2 es bisiesto: ";
-  if (fecha2.es_bisiesto() == true) {
-    std::cout << "yes";
-  }
-  else {
-    std::cout << "no";
-  }
-  std::cout << std::endl;
   std::cout << "Fecha 1 es valida: ";
   if (fecha1.es_valida() == true) {
-    std::cout << "yes";
-  }
-  else {
-    std::cout << "no";
-  }
-  std::cout << std::endl;
-  std::cout << "Fecha 2 es valida: ";
-  if (fecha2.es_valida() == true) {
     std::cout << "yes";
   }
   else {

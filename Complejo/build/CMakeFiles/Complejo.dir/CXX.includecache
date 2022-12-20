@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/usuario/Practica-11/Complejo/Complejo.h
+iostream
+-
+string
+-
+cmath
+-
+
+/home/usuario/Practica-11/Complejo/Complejo_main.cc
+Complejo.h
+/home/usuario/Practica-11/Complejo/Complejo.h
+
