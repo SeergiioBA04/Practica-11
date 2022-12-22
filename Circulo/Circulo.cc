@@ -6,7 +6,7 @@
  *
  * @author Sergio Borrell Alberto alu0101563015@ull.edu.es
  * @date Dic 18 2022
- * @brief Are, Perimetro y color de un criculo
+ * @brief Area, Perimetro y color de un criculo
  * @see https://github.com/IB-2022-2023/P11-Intro-oop/blob/main/intro-oop.md
  * @bug No bug
  */

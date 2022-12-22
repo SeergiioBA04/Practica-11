@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/usuario/Practica-11/Practica11-jueves/vector3D.cc
+iostream
+-
+cmath
+-
+vector3D.h
+/home/usuario/Practica-11/Practica11-jueves/vector3D.h
+
+/home/usuario/Practica-11/Practica11-jueves/vector3D.h
+
+/home/usuario/Practica-11/Practica11-jueves/vector3D_main.cc
+iostream
+-
+vector3D.h
+/home/usuario/Practica-11/Practica11-jueves/vector3D.h
+

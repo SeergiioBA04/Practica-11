@@ -63,6 +63,6 @@ Complejo Complejo::operator/(const Complejo &complejo) const {
   return division;
 }
 
-ostream& operator<<(ostream& os, const Complejo& complejo) {
+std::ostream& operator<<(std::ostream& os, const Complejo& complejo) {
   os << "(" << complejo.real() << ", " << complejo.imaginario() << ")" << std::endl;
 }

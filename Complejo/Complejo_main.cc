@@ -11,8 +11,6 @@
  * @bug No bug
  */
 
-// Path: Practica11-ejercisios\Complejo\Complejo_main.cpp
-
 #include "Complejo.h"
 
 void Usage(int argc, char *argv[]) {

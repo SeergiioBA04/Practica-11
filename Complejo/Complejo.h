@@ -18,8 +18,6 @@
 #include <string>
 #include <cmath>
 
-using namespace std;
-
 class Complejo {
  public:
   Complejo();
@@ -30,7 +28,7 @@ class Complejo {
   Complejo operator-(const Complejo& complejo) const;
   Complejo operator*(const Complejo& complejo) const;
   Complejo operator/(const Complejo& complejo) const;
-  friend ostream& operator<<(ostream& os, const Complejo& complejo);
+  friend std::ostream& operator<<(std::ostream& os, const Complejo& complejo);
  private:
   double real_{0};
   double imaginario_{0};
